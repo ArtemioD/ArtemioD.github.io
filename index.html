@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BiciBA: las ciclovías de Buenos Aires sobre el mapa, circuitos turísticos y una guía que te acompaña punto por punto.">
+<title>BiciBA · Descubrí Buenos Aires sobre dos ruedas</title>
+<link rel="icon" href="img/icono.png">
+<style>
+:root{color-scheme:light;--amarillo:#F7D000;--verde:#00A859;--verde-oscuro:#00391E;
+      --verde-claro:#C8FFD9;--paper:#F7F7F7;--bg:#F4F4F4;--text:#1A1A1A;--muted:#5c5c5c;--border:#CCCCCC}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.65;
+     font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+header{background:var(--paper);border-bottom:6px solid var(--amarillo);padding:54px 20px 46px;text-align:center}
+.icono{width:104px;height:104px;border-radius:24px;display:block;margin:0 auto 20px;
+       box-shadow:0 8px 24px rgba(0,0,0,.12)}
+h1{font-size:clamp(2.4rem,8vw,3.4rem);margin:0;letter-spacing:-.03em;font-weight:800}
+h1 .bici{color:var(--verde)}h1 .ba{color:var(--amarillo)}
+.lema{margin:10px auto 0;max-width:560px;font-size:1.12rem;color:var(--text)}
+.sub{margin:6px auto 0;max-width:600px;color:var(--muted)}
+.play{display:inline-block;margin-top:26px;background:var(--verde);color:#fff;text-decoration:none;
+      padding:14px 30px;border-radius:999px;font-weight:700;font-size:1.03rem;
+      box-shadow:0 6px 18px rgba(0,168,89,.28)}
+.play:hover{filter:brightness(1.08)}
+main{max-width:1000px;margin:0 auto;padding:46px 18px 60px}
+.capturas{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.capturas img{width:208px;border-radius:14px;border:1px solid var(--border);background:#fff}
+.pie-capturas{text-align:center;color:var(--muted);font-size:.88rem;margin:0 0 50px}
+h2{color:var(--verde);font-size:1.45rem;margin:0 0 22px;text-align:center}
+.cosas{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:18px;margin-bottom:54px}
+.cosa{background:#fff;border:1px solid var(--border);border-radius:16px;padding:22px 24px}
+.cosa h3{margin:0 0 6px;font-size:1.04rem;color:var(--verde-oscuro)}
+.cosa p{margin:0;color:var(--muted);font-size:.95rem}
+.cosa .emoji{font-size:1.5rem;display:block;margin-bottom:8px}
+.enlaces{background:var(--verde-claro);border:1px solid #9fe0b8;border-radius:16px;
+         padding:26px 28px;text-align:center;color:var(--verde-oscuro)}
+.enlaces h2{color:var(--verde-oscuro);margin-bottom:14px}
+.enlaces a{color:var(--verde-oscuro);font-weight:600}
+.enlaces p{margin:8px 0}
+footer{padding:0 20px 44px;text-align:center;color:var(--muted);font-size:.88rem}
+@media(max-width:560px){.capturas img{width:44%}header{padding-top:40px}}
+</style>
+</head>
+<body>
+
+<header>
+  <img class="icono" src="img/icono.png" alt="">
+  <h1><span class="bici">Bici</span><span class="ba">BA</span></h1>
+  <p class="lema"><strong>Descubrí Buenos Aires sobre dos ruedas.</strong></p>
+  <p class="sub">Las ciclovías de la Ciudad sobre el mapa, circuitos turísticos para recorrerlas
+     y una guía que te acompaña punto por punto.</p>
+  <a class="play" href="https://play.google.com/store/apps/details?id=com.artemiod.biciba">
+     Descargar en Google Play</a>
+</header>
+
+<main>
+
+  <div class="capturas">
+    <img src="img/home_claro.png" alt="Pantalla de inicio">
+    <img src="img/circuitos_claro.png" alt="Catálogo de circuitos">
+    <img src="img/detalle_claro.png" alt="Detalle de un circuito">
+    <img src="img/mapa.png" alt="Recorrido en curso sobre el mapa">
+  </div>
+  <p class="pie-capturas">Inicio · Circuitos · Detalle del recorrido · En pleno circuito</p>
+
+  <h2>Qué hace</h2>
+  <div class="cosas">
+    <div class="cosa">
+      <span class="emoji">🗺️</span>
+      <h3>Las ciclovías, siempre a mano</h3>
+      <p>Las de toda la Ciudad sobre el mapa, y disponibles sin conexión una vez descargadas.</p>
+    </div>
+    <div class="cosa">
+      <span class="emoji">🚲</span>
+      <h3>Circuitos para recorrer</h3>
+      <p>Cada uno con su distancia, duración estimada, dificultad y puntos de interés.</p>
+    </div>
+    <div class="cosa">
+      <span class="emoji">🧭</span>
+      <h3>Una guía que acompaña</h3>
+      <p>Señala el próximo punto, dice a qué distancia está y avisa al llegar. Si cerrás la
+         aplicación, al volver seguís donde quedaste.</p>
+    </div>
+    <div class="cosa">
+      <span class="emoji">📍</span>
+      <h3>Lo que tenés más cerca</h3>
+      <p>El inicio ordena los circuitos por cuál arranca más cerca tuyo, sin que la lista salte
+         con cada lectura del GPS.</p>
+    </div>
+  </div>
+
+  <h2>De día y de noche</h2>
+  <div class="capturas">
+    <img src="img/home_claro.png" alt="Inicio en tema claro">
+    <img src="img/home_oscuro.png" alt="Inicio en tema oscuro">
+  </div>
+  <p class="pie-capturas">El tema lo elegís vos, no el sistema. Hasta las ilustraciones cambian.</p>
+
+  <div class="enlaces">
+    <h2>Enlaces</h2>
+    <p><a href="PrivacidadBiciBa/">Política de privacidad</a></p>
+    <p>Sugerencias y contacto: <a href="mailto:artemio.dev.mobile@gmail.com">artemio.dev.mobile@gmail.com</a></p>
+    <p>¿Te resulta útil? Podés <a href="https://cafecito.app/biciba">invitarnos un cafecito</a> ❤️</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>BiciBA es un proyecto independiente · Hecho para disfrutar Buenos Aires sobre dos ruedas 🚲</p>
+</footer>
+
+</body>
+</html>
